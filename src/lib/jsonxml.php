@@ -6,10 +6,17 @@
         
         function toJson($arr)
         {
+            if(is_string($arr))
+                return $arr;
             return json_encode($arr);
         }
         
         function generateValidXmlFromObj($obj, $node_block='nodes', $node_name='node') {
+            
+            if(is_string($obj))
+            {
+                $obj = json_decode($obj);
+            }
             $arr = get_object_vars($obj);
             return $this->generateValidXmlFromArray($arr, $node_block, $node_name);
         }

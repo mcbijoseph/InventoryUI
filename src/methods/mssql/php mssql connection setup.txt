@@ -1,0 +1,7 @@
+Extract SQLServ58.EXE to php/ext physical path
+
+add php.ini extension
+//I used PHP 7.4 version so please bear with sqlsrv extensions.
+//74 might be replaced 
+extension=php_pdo_sqlsrv_74_ts_x64.dll
+extension=php_sqlsrv_74_ts_x64.dll

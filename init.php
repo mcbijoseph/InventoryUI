@@ -1,5 +1,6 @@
 <?php
     //LOAD DATABASE
+    require(getcwd().'/dbcon.php');
     require(getcwd().'/src/lib/dbconfig.php');
     
     
